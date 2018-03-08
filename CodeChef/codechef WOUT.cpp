@@ -61,7 +61,7 @@ int main()
 		for (int i = 1; i <= n + 1; i++)
 			v[i] += v[i - 1];
 		int c = 0;
-		ll mn = 10e18;
+		ll mn = 1e17;
 		for (int i = h; i <= n; i++)
 		{
 			mn = min(mn, v[i] - v[c++]);
